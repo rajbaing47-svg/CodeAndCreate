@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Hello : MonoBehaviour
@@ -10,6 +11,10 @@ public class Hello : MonoBehaviour
     
     void Start()
     {   
+        #region Day1
+            
+        
+        // Day 1
 
         //if else 
         //   score  = 5 + 10;
@@ -158,7 +163,7 @@ public class Hello : MonoBehaviour
 
         //Array 
 
-        int [] studentArray  = new int[10]{1,2,3,4,5,6,7,8,9,90};
+        //int [] studentArray  = new int[10]{1,2,3,4,5,6,7,8,9,90};
         // Debug.Log(studentArray[5]);
 
         // studentArray[5] = 5;
@@ -166,12 +171,12 @@ public class Hello : MonoBehaviour
 
         //List  
 
-        List<int> StudentList = new List<int>();
+        //List<int> StudentList = new List<int>();
 
-        StudentList.Add(10);
-        StudentList.Add(20);
-        StudentList.Add(30);
-        StudentList.Add(40);
+        // StudentList.Add(10);
+        // StudentList.Add(20);
+        // StudentList.Add(30);
+        // StudentList.Add(40);
 
         // Debug.Log(StudentList[0] + "  0th Value ");
     
@@ -194,13 +199,52 @@ public class Hello : MonoBehaviour
         // }
 
         // }
-            
+         #endregion   
 
+    //MyFirstMethod();
+    //MySecondMethod(5,15);
+//    int result =  MyThirdMetod(10,15);
+//     Debug.Log("Third Method  : "+result);
 
+        myFourthMethod(10,20);
+        Debug.Log("Two Digit Method : " +someOfTwoDigits);
+
+        myFourthMethod(10,20,30);
+        Debug.Log("Three digit method : "+ someOfTwoDigits);
+}
+        //Day 2 
+
+        // Function and Methods 
+
+    //     public void MyFirstMethod()
+    // {
+    //     Debug.Log("Method 1st is working");
+    // }
+
+    // public void MySecondMethod(int a , int b)
+    // {
+    //     int sum = a+b;
+    //     Debug.Log("Addition is : "+sum);
+    // }
+
+    // public int MyThirdMetod(int a ,int b)
+    // {
+    //     int sum = a + b;
+    //     return sum ;
+    // }
+
+    int someOfTwoDigits = 0;
+    public void myFourthMethod(int a , int b)
+    {
+        someOfTwoDigits= a + b;
+
+    }
 
     
-    void Update()
+    public void myFourthMethod(int a , int b, int c)
     {
-       
+        someOfTwoDigits= a + b + c;
+  
     }
+
 }
